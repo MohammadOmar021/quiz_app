@@ -10,7 +10,7 @@ function Quiz(question, option1, option2, option3, ans){
     this.option3 = option3;
     this.ans = ans;
 }
-
+alert("Add ? at the End of the Question, Add . at the end of the Options, Add * at the end of the of the correct Answer")
 const questionarr = [];
 
 btn.addEventListener('click', ()=>{
