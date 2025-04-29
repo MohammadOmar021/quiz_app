@@ -11,6 +11,7 @@ body{
     height: 100vh;
     gap: 20px;
     /* border: 2px solid black; */
+    flex-wrap: wrap;
 }
 #box1{
     display: flex;
