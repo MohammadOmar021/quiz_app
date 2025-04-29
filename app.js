@@ -1,7 +1,7 @@
 let textarea = document.getElementById("textarea")
 
 const btn = document.getElementById("btn")
-
+const box2 = document.getElementById("box2")
 
 function Quiz(question, option1, option2, option3, ans){
     this.question = question;
@@ -20,7 +20,7 @@ btn.addEventListener('click', ()=>{
     let option1;
     let option2;
     let option3;
-    const text = textarea.value
+    let text = textarea.value
     console.log(text)
     console.log(text.length)
     for(let i=0; i<text.length; i++){
@@ -71,8 +71,24 @@ btn.addEventListener('click', ()=>{
         }
     }
 
-   
+ 
+
+        questionarr.map(item=>{
+            box2.innerHTML+=`
+            <div>
+           <p> Question: ${item.question}</p>
+            <p>Option1: ${item.option1}</p>
+            <p>Option2: ${item.option2}</p>
+            <p>Option3: ${item.option3}</p>
+            <p>answer: ${item.ans}</p>
+            </div>
+            ----------------
+                `
+    
+        })
+    
     
     console.log(questionarr)
+    
 })
 
